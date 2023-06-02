@@ -9,7 +9,6 @@ const GlobalStyle = createGlobalStyle`
     body{
         background: #000000;
         font-family: 'Inter', sans-serif;
-        /* font-family: 'Lobster', cursive; */
     }
     button{
         font-weight: bold;
