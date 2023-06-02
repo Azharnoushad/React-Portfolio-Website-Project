@@ -1,9 +1,11 @@
 import AboutUs from "./Pages/AboutUs";
+import GlobalStyle from "./Components/GlobalStyle";
 
 function App() {
   return (
     <div className="App">
-      <AboutUs />
+      <GlobalStyle/>
+        <AboutUs />
     </div>
   );
 }
