@@ -1,38 +1,41 @@
 import React from "react";
 import home1 from "../img/home1.png";
 // styles----------------------------------------------------------------
-import {About,Description,Image,Hide} from "../Style"
+import { About, Description, Image, Hide } from "../Style";
+// framer motion --------------------------------
+import { motion } from "framer-motion";
+import { titleAnimation } from "./Animation";
+import { fadeAnimation } from "./Animation";
+import { imgAnimation } from "./Animation";
 
 const AboutSection = () => {
   return (
     <About>
       <Description>
-        <div className="title">
-          <Hide >
-            <h2>We work to make</h2>
+        <div>
+          <Hide>
+            <motion.h2 variants={titleAnimation}>We work to make</motion.h2>
           </Hide>
           <Hide className="hide">
-            <h2>
+            <motion.h2 variants={titleAnimation}>
               your <span>dreams</span> come
-            </h2>
+            </motion.h2>
           </Hide>
           <Hide className="hide">
-            <h2>come true.</h2>
+            <motion.h2 variants={titleAnimation}>come true.</motion.h2>
           </Hide>
         </div>
-        <p>
+        <motion.p variants={fadeAnimation}>
           Contact us for any photograpghy or videography ideas that you have. We
           have proffessionals with amazing skills
-        </p>
-        <button>Contact Us</button>
+        </motion.p>
+        <motion.button variants={fadeAnimation}>Contact Us</motion.button>
       </Description>
       <Image>
-        <img src={home1} alt="guy with the camera" />
+        <motion.img variants={imgAnimation} src={home1} alt="guy with the camera" />
       </Image>
     </About>
   );
 };
-
-
 
 export default AboutSection;
