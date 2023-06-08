@@ -42,6 +42,13 @@ export const fadeAnimation = {
       duration: 0.75,
     },
   },
+  exit: {
+    opacity: 0,
+    transition: {
+      ease: "easeIn",
+      duration: 0.75,
+    },
+  },
 };
 
 export const imgAnimation = {
