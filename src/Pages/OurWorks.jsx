@@ -13,6 +13,7 @@ import {
   sliderAnimation
 } from "../Components/Animation";
 
+
 const OurWorks = () => {
   return (
     <Work
@@ -51,6 +52,7 @@ const OurWorks = () => {
           <img src={goodtimes} alt="" />
         </Link>
       </Movie>
+     
     </Work>
   );
 };

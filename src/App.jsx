@@ -6,12 +6,14 @@ import ContactUs from "./Pages/ConatctUs";
 import { Routes, Route,useLocation } from "react-router-dom";
 import MovieDetails from "./Pages/MovieDetails";
 import { AnimatePresence } from "framer-motion";
+import ScrollTop from "./Components/ScrollTop";
 
 function App() {
   const location =useLocation()
   return (
     <div className="App">
       <GlobalStyle />
+      <ScrollTop/>
       <NavBar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
